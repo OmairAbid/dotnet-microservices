@@ -1,3 +1,5 @@
+using Catelog.API.Extensons;
+
 namespace Catelog.API
 {
     public class Program
@@ -7,6 +9,8 @@ namespace Catelog.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            builder.Services.ServiceConfig();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
